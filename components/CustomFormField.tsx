@@ -44,13 +44,19 @@ const RenderField = ({ field, props }: { field: any; props: CustomProps }) => {
           )}
           <FormControl>
             <Input
-            placeholder={placeholder}
+              placeholder={placeholder}
               {...field}
               className="shad-input border-0"
             />
           </FormControl>
         </div>
       );
+      case FormFieldType.PHONE_INPUT:
+        return (
+          <FormControl>
+            
+          </FormControl>
+        )
 
     default:
       break;
